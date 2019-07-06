@@ -1,6 +1,11 @@
 z=int(input("enter the number"))
 result=z%2
-if(result==0):
-    print("Even")
+if(z<=0):
+    print("invalid")
 else:
-    print("Odd")
+    if(result==0):
+        print("Even")
+    elif(result==1):
+        print("Odd")
+    else:
+        print("invalid")
