@@ -1,4 +1,4 @@
-z=int(input("enter the number"))
+z=int(input())
 result=z%2
 if(z<=0):
     print("invalid")
