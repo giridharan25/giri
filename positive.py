@@ -1,4 +1,4 @@
-user=float(input("enter the number"))
+user=int(input("enter the number"))
 if(user>0):
   print("Positive")
 elif(user<0):
