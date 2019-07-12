@@ -1,2 +1,2 @@
-s=input()
+g=input()
 print(s,end=".")
