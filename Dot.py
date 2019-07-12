@@ -1,2 +1,3 @@
 g=input()
-print(s,end=".")
+
+print(g,end=".")
