@@ -1,10 +1,11 @@
-x,y=list(input().split())
-if(len(x)==len(y)):
+x,y = input().split()
+if len(x) != len(y):
+    print("No")
+else:
     for i in range(0,len(x)):
-        if(y[i]==y[i+1] and x[i]==x[i+1]):
+        if x.count(x[i])==y.count(y[i]):
             print("yes")
             break
         else:
             print("no")
-else:
-    print("no")
+            break
