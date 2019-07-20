@@ -5,4 +5,4 @@ for i in range (2,A+1):
          B.append(i)
          A=A//i 
 C=sorted(B) 
-print(C)
+print(*C)
