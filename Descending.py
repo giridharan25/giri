@@ -1,5 +1,8 @@
 n=int(input())
-l=list(map(int,input().split())
-l.sort(reverse=True)
-for i in l:
-  print(i,end="")
+a=list(map(int,input().split()))
+a.sort()
+a1=a[::-1]
+if(a1[0]!=0):
+    print(*a1,sep="")
+else:
+    print("0")
