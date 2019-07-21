@@ -1,12 +1,13 @@
-a=int(input())
-b=list(map(int,input().split())
-c=[]
-for i in b:
-    	if(b.count(i)>1 and i not in c):
-        	c.append(i)
-        	c.sort() 
-if(len(c)==0):
+int(input())
+a=list(map(int,input().split()))
+l=[]
+for i in a:
+    if a.count(i)>1:
+        l.append(i)
+l=list(set(sorted(l)))
+if len(l)>0:
+    for i in range(len(l)-1):
+        print(l[i],end=' ')
+    print(l[len(l)-1],end='')
+else:
     print("unique")
-for j in c:
-    print(j,end=" ")
-
