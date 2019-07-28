@@ -1,4 +1,6 @@
 a=str(input())
-a.replace(' ','')
-print(a)
+s=list(a.split())
+print(*s)
+
+
 
