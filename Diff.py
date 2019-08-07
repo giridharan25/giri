@@ -5,11 +5,11 @@ c=len(x)
 d=len(y)
 if(c<d):
    for k in range(0,c):
-     if(x[k]==y[k]):
+     if(x[k] in y):
         coun+=1
 else:
     for l in range(0,d):
-     if(x[l]==y[l]):
+     if(y[l] in x):
         coun+=1
 if(c<d):
     print(d-coun)
