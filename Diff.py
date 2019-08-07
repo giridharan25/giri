@@ -1,9 +1,17 @@
 x,y=map(str,input().split())
-count=0
+coun=0
+
 c=len(x)
 d=len(y)
-for k in range(0,c):
-    if(x[k]==y[k]):
-        count+=1
-o=(d-count)
-print(o)    
+if(c<d):
+   for k in range(0,c):
+     if(x[k]==y[k]):
+        coun+=1
+else:
+    for l in range(0,d):
+     if(x[l]==y[l]):
+        coun+=1
+if(c<d):
+    print(d-coun)
+else:
+    print(c-coun)
