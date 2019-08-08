@@ -12,9 +12,8 @@ else:
     
    for i in range(0,h-y):
        a=small
-       f=int(x[i:i+y])
+       f=int(x[i:i+g])
        if(a>f):
         l.append(f)
    l.sort()
-   print(l)
    print(l[0])
