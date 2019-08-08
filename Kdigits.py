@@ -1,16 +1,20 @@
 x,y=map(str,input().split())
 y=int(y)
 if(y==0):
-    print(x)
+    print(int(x))
 else:
-  l=[]
-  for i in x:
-    k=int(i)
-    l.append(k)
-  small=l[0]
-  for j in l:
-    if(j<small):
-        small=j
-  h=l.index(small)
-  o=x[h:y+h]
-  print(o)
+   h=len(x)
+   g=h-y
+   s=x[:g]
+   small=int(s)
+   l=[]
+   l.append(small)
+    
+   for i in range(0,h-y):
+       a=small
+       f=int(x[i:i+y])
+       if(a>f):
+        l.append(f)
+   l.sort()
+   print(l)
+   print(l[0])
