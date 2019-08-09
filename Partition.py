@@ -1,0 +1,23 @@
+j=list(map(int,input().split()))
+n=j[0]
+a=j[1]
+b=j[2]
+x=n/2
+y=x
+l=[]
+sum1=0
+while(x!=0):
+    if(x%a==0):
+        l.append(a)
+        x=x-a
+    elif(x%b==0):
+        l.append(b)
+        x=x-b
+    else:
+        break
+for i in l:
+    sum1=sum1+i
+if(sum1==y):
+    print("YES")
+else:
+    print("NO")
