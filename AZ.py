@@ -9,6 +9,5 @@ for j in y:
      sum2=sum2+ord(j)
 o=sum2-sum1
 p=o
-if(o>96):
-    p=o-96
+
 print(p)
