@@ -1,4 +1,4 @@
-n=input()
+n=int(input())
 list1=list(map(int,input().split()))
 
 o=[]
