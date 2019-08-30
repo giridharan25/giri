@@ -1,0 +1,23 @@
+n=int(input())
+coun=0
+i=n
+while(i!=0):
+   if((i==1000)or(i>1000)):
+       coun+=1
+       i=i-1000
+   elif((i==500)or(i>500)):
+       coun+=1
+       i=i-500
+   elif((i==100)or(i>100)):
+       coun+=1
+       i=i-100
+   elif((i==50)or(i>50)):
+       coun+=1
+       i=i-50
+   elif((i==10)or(i>10)):
+       coun+=1
+       i=i-10
+   elif((i==1)or(i>1)):
+       coun+=1
+       i=i-1
+print(coun)
