@@ -8,7 +8,7 @@ def check(expression):
             queue.append(map[i])
         elif i in close_tup:
             if not queue or i != queue.pop():
-                return "0"
-    return "1"
+                return "unbalanced"
+    return "balanced"
 string =input()
 print(check(string))
