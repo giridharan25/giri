@@ -1,22 +1,21 @@
-a=input()
-d=len(a)
-x=0
-for i in range(d):
-   if(a=='IV'):
-       x=4
-   elif(a=='IX'):
-       x=9
-   elif(a=='XIV'): 
-       x=14
-   elif(a=='XIX'):
-       x=19
-   
-   else:
-     
-     if(a[i]=="I"):
-       x=x+1
-     elif(a[i]=="V"):
-       x=x+5
-     elif(a[i]=="X"):
-       x=x+10
-print(x)  
+s=input()
+cur=0
+pre=0
+total=0
+result=0
+l=['I','V','X','L','C','D','M']
+dic={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+for i in range(len(s)):
+    if(s[i] not in l):
+        result=1
+        break
+    else:
+        cur=dic[s[i]]
+        if(cur>pre):
+           total=total+cur-2*pre
+        else:
+           total=total+cur
+if(result==0):           
+    print(total)
+else:
+    print(-1)
